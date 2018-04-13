@@ -6,22 +6,23 @@ import HeaderBar from '../components/header/header'
 import Footer from '../components/footer/footer'
 import Home from '../components/home/home'
 import Signup from '../components/signup/signup'
+import Dashboard from '../components/dashboard/dashboard'
 
-const FixedMenuLayout = () => (
+const AuthenticatedLayout = () => (
   <div>
-    <HeaderBar/>
-
+    {/* <HeaderBar/> */}
+HEADER HERE
     <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/signup" component={Signup} />
+        <Route exact path="/app/dashboard" component={Dashboard} />
+        {/* <Route exact path="/signout" component={Signup} /> */}
         {/* <Route exact path="/home" component={Home} />
         <Route exact path="/signup" component={SignUp} /> 
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/footer" component={Footer} /> */}
-    </Switch>;
-
+    </Switch>
+    
     <Footer/>
   </div>
 )
 
-export default FixedMenuLayout
+export default AuthenticatedLayout
