@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Divider, Dropdown, Grid, Header, Image, List, Menu, Segment } from 'semantic-ui-react'
 import { Switch, Route } from "react-router-dom";
 
+
 import HeaderBar from '../components/header/header'
 import Footer from '../components/footer/footer'
 import Home from '../components/home/home'

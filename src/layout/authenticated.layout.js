@@ -14,9 +14,9 @@ const AuthenticatedLayout = () => (
 HEADER HERE
     <Switch>
         <Route exact path="/app/dashboard" component={Dashboard} />
-        {/* <Route exact path="/signout" component={Signup} /> */}
-        {/* <Route exact path="/home" component={Home} />
-        <Route exact path="/signup" component={SignUp} /> 
+        <Route exact path="/signout" component={Signup} />
+         <Route exact path="/home" component={Home} />
+        {/*<Route exact path="/signup" component={SignUp} /> 
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/footer" component={Footer} /> */}
     </Switch>
