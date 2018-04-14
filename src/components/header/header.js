@@ -16,11 +16,15 @@ const HeaderBar = () => (
         </Menu.Item> */}
 
         <Menu.Item>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/">WORKBE.</NavLink>
         </Menu.Item>
 
         <Menu.Item>
           <NavLink to="/signup">Signup</NavLink>
+        </Menu.Item>
+
+        <Menu.Item>
+          <NavLink to="/signin">Sign In</NavLink>
         </Menu.Item>
        
       </Container>

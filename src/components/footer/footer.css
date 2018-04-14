@@ -1,0 +1,22 @@
+.center{
+    display: flex;
+    min-height: 45vh;
+    flex-direction: column;
+  }
+  
+  .center {
+    flex: 1;
+  }
+
+  h4,h5 {
+      font-weight: lighter;
+  }
+
+.a {
+    width:25px;
+    height: 25px;
+}
+
+    
+
+
