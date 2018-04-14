@@ -24,7 +24,7 @@ const HeaderBar = () => (
         </Menu.Item>
 
         <Menu.Item>
-          <NavLink to="/signin">Sign In</NavLink>
+          <NavLink to="/sign" float='left'>Sign In</NavLink>
         </Menu.Item>
        
       </Container>

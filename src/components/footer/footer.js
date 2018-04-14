@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Divider, Dropdown, Grid, Header, Image, List, Menu, Segment } from 'semantic-ui-react'
+import { Icon } from 'semantic-ui-react'
 import './footer.css'
 
 const Footer = () => (
@@ -45,10 +46,13 @@ const Footer = () => (
             </Grid.Column>
             <Grid.Column width={7}>
               <Header inverted as='h4' content='Social' />
-              <List.Item as='a'><i class="linkedin icon"></i></List.Item>
-              <List.Item as='a'><i class="github icon"></i></List.Item>
+              <Icon link name='linkedin icon' size='big' color='blue' to='/https://www.linkedin.com/in/acalixte/'/>
+              <Icon link name='github icon' size='big' color='grey' />
+              <Icon link name='google plus icon' size='big' color='red'/>
+              <Icon link name='twitter' size='big' color='dodger blue' />
+              {/*<List.Item as='a'><i class="github icon"></i></List.Item>
               <List.Item as='a'><i class="google plus icon"></i></List.Item>
-              <List.Item as='a'><i class="twitter icon"></i></List.Item> 
+            <List.Item as='a'><i class="twitter icon"></i></List.Item> */}
               
             </Grid.Column>
           </Grid.Row>
