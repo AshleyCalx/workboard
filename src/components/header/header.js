@@ -22,11 +22,11 @@ const HeaderBar = () => (
         </Menu.Item>
   <div class='right menu'>
         <Menu.Item>
-          <NavLink to="/signup">Signup</NavLink>
+          <NavLink to="/signup">Sign Up</NavLink>
         </Menu.Item>
 
         <Menu.Item>
-          <NavLink to="/sign">Sign In</NavLink>
+          <NavLink to="/login">Log In</NavLink>
         </Menu.Item>
   </div>
       </Container>

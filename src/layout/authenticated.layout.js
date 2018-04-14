@@ -6,6 +6,7 @@ import HeaderBar from '../components/header/header'
 import Footer from '../components/footer/footer'
 import Home from '../components/home/home'
 import Signup from '../components/signup/signup'
+import Login from '../components/login/login'
 import Dashboard from '../components/dashboard/dashboard'
 
 const AuthenticatedLayout = () => (
@@ -16,8 +17,8 @@ HEADER HERE
         <Route exact path="/app/dashboard" component={Dashboard} />
         <Route exact path="/signout" component={Signup} />
          <Route exact path="/home" component={Home} />
-        {/*<Route exact path="/signup" component={SignUp} /> 
-        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/login" component={Login} /> 
+        {/*<Route exact path="/contact" component={Contact} />
         <Route exact path="/footer" component={Footer} /> */}
     </Switch>
     
