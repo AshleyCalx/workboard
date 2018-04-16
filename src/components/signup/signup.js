@@ -1,75 +1,27 @@
 import React from 'react'
-import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
-import './signup.css'
-import {Redirect} from 'react-router-dom'
+import { Header, Modal,Button, Checkbox, Form  } from 'semantic-ui-react'
 
-export default class LoginForm extends React.Component {
-  constructor(props) {
-    super(props)
 
-    this.state = {
-      authenticated: false
-    }
-  }
 
-  handleLoginClick(e) {
-    debugger
-    this.setState({
-      authenticated: true
-    })
-  }
-
-  render() {
-    debugger
-    if(this.state.authenticated) {
-        return (
-          <Redirect to="/app/dashboard"/>
-        )
-    }
-
-    return (
-      <div className='login-form'>
-        <Grid
-          textAlign='center'
-          style={{ height: '100%' }}
-          verticalAlign='middle'
-        >
-          <Grid.Column style={{ maxWidth: 450 }}>
-            <Header as='h2' color='black' textAlign='center'>
-              <Image src='/logo.png' />
-              {' '}Log-in to your account
-            </Header>
-            <div size='large'>
-              <Segment stacked>
-              <Form.Input
-                  fluid
-                  icon='user'
-                  iconPosition='left'
-                  placeholder='Full name'
-                />
-                <Form.Input
-                  fluid
-                  icon='envelope'
-                  iconPosition='left'
-                  placeholder='E-mail address'
-                />
-                <Form.Input
-                  fluid
-                  icon='lock'
-                  iconPosition='left'
-                  placeholder='Password'
-                  type='password'
-                />
-                
-                <Button color='green' fluid size='large' onClick={this.handleLoginClick.bind(this)}>Create Account</Button>
-              </Segment>
-            </div>
-            <Message>
-              {/*New to us? <a href='#'>Sign Up</a>*/}
-            </Message>
-          </Grid.Column>
-        </Grid>
-      </div>
-      )
-  }
-}
+const SignupModal = () => (
+  <Modal trigger={<Button>Show Modal</Button>}>
+    <Modal.Header>Sign Up</Modal.Header>
+    <Modal.Content>
+      <Form>
+    <Form.Field>
+      <label>First Name</label>
+      <input placeholder='First Name' />
+    </Form.Field>
+    <Form.Field>
+      <label>Last Name</label>
+      <input placeholder='Last Name' />
+    </Form.Field>
+    <Form.Field>
+      <Checkbox label='I agree to the Terms and Conditions' />
+    </Form.Field>
+    <Button type='submit'>Submit</Button>
+  </Form>
+    </Modal.Content>
+  </Modal>
+)
+export default SignupModal

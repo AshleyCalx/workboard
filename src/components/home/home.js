@@ -1,21 +1,23 @@
 import React from 'react'
-import { Container, Divider, Dropdown, Grid, Header, Image, List, Menu, Segment } from 'semantic-ui-react'
+import { Container, Divider, Dropdown, Grid, Header, List, Menu, Segment } from 'semantic-ui-react'
+import { height } from 'window-size';
+//import desk from './components/boxes.png'
 
-
-{/*const src1 = '/src/public/img/desk.png'*/}
-
+//style={{ background:'cover', position:'50%' }}
+//const desk = '/desk.jpg'
 
 const Home = () => (
   <React.Fragment>
-    <Container text style={{ marginTop: '7em' }}>
-    <Image src="https://unsplash.com/photos/bKjHgo_Lbpo" />
-     
+    <Container text style={{ marginTop: '7em', position:"relative" }}>
+    {/*<img src={desk} alt="Desk" style={{position:'relative'}} />*/}
       <Header as='h1'>Semantic UI React Fixed Template</Header>
-      <p>This is a basic fixed menu template using fixed size containers.</p>
-      <p>A text container is used for the main container, which is useful for single column layouts.</p>
+      {/*<Image src={'/images/boxes.png'} >*/}
+      <div className="boxContent" stle={{position:"absolute"}}>
+        <p>This is a basic fixed menu template using fixed size containers.</p>
+        <p>A text container is used for the main container, which is useful for single column layouts.</p>
+      </div>
     </Container>
   </React.Fragment>
 )
 
 export default Home
-

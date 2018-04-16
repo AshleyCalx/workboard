@@ -40,7 +40,7 @@ const Footer = () => (
                 {/*<List.Item as='a'>Link Four</List.Item>*/}
               </List>
             </Grid.Column>
-            <Grid.Column width={3}>
+            <Grid.Column width={3} className="footerCredit">
               <Header inverted as='h4' content='WORKBE.' />
               <p>Enhancing and simplifying the way teams work together! Collaborate better with WORKBE.</p>
             </Grid.Column>

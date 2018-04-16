@@ -1,8 +1,13 @@
 import React from 'react'
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+
 import {Redirect} from 'react-router-dom'
 
+
+
 export default class LoginForm extends React.Component {
+
+  
     constructor(props) {
       super(props)
   

@@ -7,7 +7,7 @@ export default ({component: Component, isAuthenticated, ...rest}) => (
             return (
                 isAuthenticated ? 
                 <Component {...props}/> :
-                <Redirect to="/signup"/>
+                <Redirect to="/auth"/>
             )}
         }/>
 )
