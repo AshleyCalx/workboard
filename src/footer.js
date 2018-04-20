@@ -34,9 +34,9 @@ const Footer = () => (
             <Grid.Column width={3}>
               <Header inverted as='h4' content='Contact' />
               <List link inverted>
-                <List.Item as='a'><i class="map marker alternate icon"></i>Hollywood, FL</List.Item>
-                <List.Item as='a'><i class="envelope outline icon"></i>Email Me</List.Item>
-                <List.Item as='a'><i class="mobile alternate icon"></i>+1(609) 420-1133</List.Item>
+                <List.Item as='a'><i className="map marker alternate icon"></i>Hollywood, FL</List.Item>
+                <List.Item as='a'><i className="envelope outline icon"></i>Email Me</List.Item>
+                <List.Item as='a'><i className="mobile alternate icon"></i>+1(609) 420-1133</List.Item>
                 {/*<List.Item as='a'>Link Four</List.Item>*/}
               </List>
             </Grid.Column>
@@ -46,10 +46,10 @@ const Footer = () => (
             </Grid.Column>
             <Grid.Column width={7}>
               <Header inverted as='h4' content='Social' />
-              <Icon link name='linkedin icon' size='big' color='blue' to='/https://www.linkedin.com/in/acalixte/'/>
-              <Icon link name='github icon' size='big' color='grey' />
-              <Icon link name='google plus icon' size='big' color='red'/>
-              <Icon link name='twitter' size='big' color='dodger blue' />
+              <Icon link name='linkedin icon' size='big' color="blue" to='/https://www.linkedin.com/in/acalixte/'/>
+              <Icon link name='github icon' size='big' color="grey" to='https://github.com/AshleyCalx'/>
+              <Icon link name='google plus icon' size='big' color="red"/>
+              <Icon link name='twitter' size='big' color="dodger blue" />
               {/*<List.Item as='a'><i class="github icon"></i></List.Item>
               <List.Item as='a'><i class="google plus icon"></i></List.Item>
             <List.Item as='a'><i class="twitter icon"></i></List.Item> */}
